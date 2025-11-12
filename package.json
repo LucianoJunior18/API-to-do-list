@@ -1,0 +1,24 @@
+{
+  "name": "api-m2-pda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/server.js",
+    "db:migrate": "node --experimental-vm-modules ./node_modules/sequelize-cli/lib/sequelize db:migrate",
+    "db:seed": "node --experimental-vm-modules ./node_modules/sequelize-cli/lib/sequelize db:seed:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "sqlite3": "^5.1.7"
+  }
+}
