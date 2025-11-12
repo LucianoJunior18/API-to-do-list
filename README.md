@@ -32,7 +32,7 @@ Antes de iniciar, você precisa ter instalado:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/API-To-Do-List-M2-PdA.git
+   git clone https://git@github.com:LucianoJunior18/API-to-do-list.git
    cd API-To-Do-List-M2-PdA
    ```
 
@@ -116,31 +116,12 @@ src/
   "id": 1,
   "title": "Estudar Node.js",
   "description": "Praticar criação de APIs com Express",
-  "status": "pending",
-  "dueDate": "2025-11-11T20:17:53.678Z",
+  "status": "pending" "in_progress" "done",
+  "dueDate": "11/11/2025 T20:17:53.678Z",
   "createdAt": "2025-11-11T20:17:53.678Z",
   "updatedAt": "2025-11-11T20:17:53.678Z"
 }
 ```
-
----
-
-## 🚀 Próximas Melhorias
-
-- [ ] Adicionar documentação com **Swagger**
-- [ ] Implementar autenticação (JWT)
-- [ ] Criar frontend para consumo da API
-- [ ] Adicionar testes automatizados
-
----
-
-## 🧑‍💻 Como contribuir
-
-1. Faça um fork do projeto  
-2. Crie uma branch (`git checkout -b feature/nome-da-feature`)  
-3. Faça as alterações e commit (`git commit -m 'Adiciona nova feature'`)  
-4. Envie para o GitHub (`git push origin feature/nome-da-feature`)  
-5. Abra um Pull Request  
 
 ---
 
