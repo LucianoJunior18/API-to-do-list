@@ -132,4 +132,4 @@ Sinta-se livre para usar e modificar 😊
 
 ---
 
-Feito com 💚 por **Lucia / Projeto PdA - Módulo 2**
+Feito com 💚  / Projeto PdA - Módulo 2**
