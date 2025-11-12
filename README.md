@@ -4,6 +4,7 @@
 ![Express](https://img.shields.io/badge/Express-v5.1.0-blue)
 ![Sequelize](https://img.shields.io/badge/Sequelize-v6.37.7-purple)
 ![SQLite](https://img.shields.io/badge/SQLite-v3.51.0-orange)
+![Sequelize CLI](https://img.shields.io/badge/Sequelize%20CLI-v6.6.3-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 Uma API RESTful para gerenciamento de tarefas, desenvolvida com **Node.js**, **Express** e **SQLite**, utilizando **Sequelize ORM**.
@@ -33,7 +34,7 @@ Antes de iniciar, você precisa ter instalado:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/LucianoJunior18/API-to-do-list.git
-   cd API-To-Do-List-M2-PdA
+   cd API-to-do-list
    ```
 
 2. Instale as dependências:
@@ -116,7 +117,7 @@ src/
   "id": 1,
   "title": "Estudar Node.js",
   "description": "Praticar criação de APIs com Express",
-  "status": "pending" ou "in_progress", "done",
+  "status": "pending" // ou "in_progress" ou "done",
   "dueDate": "11/11/2025 T20:17:53.678Z",
   "createdAt": "2025-11-11T20:17:53.678Z",
   "updatedAt": "2025-11-11T20:17:53.678Z"
