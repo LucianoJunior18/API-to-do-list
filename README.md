@@ -32,7 +32,7 @@ Antes de iniciar, você precisa ter instalado:
 
 1. Clone o repositório:
    ```bash
-   git clone https://git@github.com:LucianoJunior18/API-to-do-list.git
+   git clone https://github.com/LucianoJunior18/API-to-do-list.git
    cd API-To-Do-List-M2-PdA
    ```
 
@@ -116,20 +116,19 @@ src/
   "id": 1,
   "title": "Estudar Node.js",
   "description": "Praticar criação de APIs com Express",
-  "status": "pending" "in_progress" "done",
+  "status": "pending" ou "in_progress", "done",
   "dueDate": "11/11/2025 T20:17:53.678Z",
   "createdAt": "2025-11-11T20:17:53.678Z",
   "updatedAt": "2025-11-11T20:17:53.678Z"
 }
 ```
-
 ---
 
-## 📄 Licença
+## 👤 Autor
 
-Este projeto está sob a licença MIT.  
-Sinta-se livre para usar e modificar 😊
+**Luciano Junior**  
+💼 Projeto desenvolvido para o curso *PdA - Módulo 2*  
+🔗 [GitHub](https://github.com/LucianoJunior18)
 
----
 
-Feito com 💚  / Projeto PdA - Módulo 2**
+Feito com 💚  / Projeto PdA - Módulo 2
