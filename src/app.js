@@ -1,27 +1,19 @@
-const express = require("express")
-const routes = require("./routes/index.js")
+const express = require("express");
+const cors = require("cors");
+const routes = require("./routes/index.js");
 
+const app = express();
 
-const app = express()
+// ✅ CORS (resolve seu erro do front)
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-// 👇 ADICIONE O CORS AQUI (ANTES DAS ROTAS)
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
+app.use(express.json());
 
-  // Handle preflight requests
-    if (req.method === 'OPTIONS') {
-    return res.sendStatus(200);
-}
-
-    next();
-});
-
-app.use(express.json()) //
-
-routes(app)
-
+// rotas centralizadas
+routes(app);
 
 module.exports = app;
-
