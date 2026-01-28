@@ -4,31 +4,36 @@ class Controller {
     }
 
     async pegaTodos(req, res) {
-        try {
-            const listasDeRegistro = await this.entidadeService.pegaTodosOsRegistros()
-            return res.status(200).json(listasDeRegistro)
-        } catch(erro) {
-            // erro
-        }
-    }
+    try {
+        const listasDeRegistro = await this.entidadeService.pegaTodosOsRegistros();
+        return res.status(200).json(listasDeRegistro);
+  } catch (erro) {
+        console.error("Erro ao buscar todos os registros", erro);
+        return res
+        .status(500)
+        .json({ mensagem: `Erro ao buscar todos os registros: ${erro.message}` });
+  }
+}
 
     async pegaUmPorId(req, res) {
-        const { id } = req.params
-        try {
-            const umRegistro = await this.entidadeService.pegaUmRegistroPorId(Number(id));
-            return res.status(200).json(umRegistro)
-        } catch(erro) {
-            // erro
-        }
-
-    }
+  const { id } = req.params;
+  try {
+    const umRegistro = await this.entidadeService.pegaUmRegistroPorId(Number(id));
+    return res.status(200).json(umRegistro);
+  } catch (erro) {
+    console.error("Erro ao buscar registro por id", erro);
+    return res
+      .status(500)
+      .json({ mensagem: `Erro ao buscar registro: ${erro.message}` });
+  }
+}
 
 
     async criaNovo(req, res) {
         const dadosParaCriacao = req.body;
         try {
             const novoRegistroCriado = await this.entidadeService.criaRegistro(dadosParaCriacao);
-            return res.status(200).json(novoRegistroCriado)
+            return res.status(201).json(novoRegistroCriado)
         } catch(erro) {
             console.error("Erro ao criar novo registro", erro)
             return res.status(500).json({mensagem: `Erro ao criar novo registro: ${erro.message}`})
