@@ -7,6 +7,9 @@ dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
+console.log("DATABASE_URL:", process.env.DATABASE_URL ? "OK - encontrada" : "NÃO ENCONTRADA");
+console.log("NODE_ENV:", process.env.NODE_ENV);
+
 app.get("/", (req, res) => {
   res.status(200).json({ mensagem: "Boas-vindas à API" });
 });
