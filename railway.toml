@@ -2,4 +2,4 @@
 buildCommand = "npm install"
 
 [deploy]
-startCommand = "NODE_ENV=production npm run db:migrate && node src/server.js"
+startCommand = "node src/server.js"
